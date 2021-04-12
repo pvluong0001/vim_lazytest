@@ -21,7 +21,6 @@ class SessionsController < ApplicationController
     if current_user.nil?
       return redirect_to '/login'
     end
-    render :layout => 'public'
   end
 
   def page_requires_login
