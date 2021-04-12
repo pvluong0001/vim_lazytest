@@ -1,0 +1,5 @@
+<% if logged_in? %>
+  <div class="flex items-center justify-center h-screen">
+    <h1 class="text-3xl font-bold">Hi, <%= current_user.username %></h1>
+  </div>
+<%end%>
